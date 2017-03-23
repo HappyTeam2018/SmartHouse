@@ -4,7 +4,7 @@ SET FOREIGN_KEY_CHECKS=0;
 DROP TABLE IF EXISTS `admin`;
 
  
-DROP TABLE IF EXISTS `admin_account`;
+DROP TABLE IF EXISTS `Admin_account`;
 CREATE TABLE `admin_account` (
   `admin_accountID` int(11) NOT NULL AUTO_INCREMENT,
   `admin_username` varchar(255) DEFAULT NULL,
@@ -17,7 +17,7 @@ CREATE TABLE `admin_account` (
 -- ----------------------------
 INSERT INTO `admin_account` VALUES ('1', 'admin', 'admin');
 
-CREATE TABLE `admin` (
+CREATE TABLE `Admin` (
   `adminID` int(11) NOT NULL,
   `admin_name` varchar(255) DEFAULT NULL,
   `admin_sex` varchar(255) DEFAULT NULL,
@@ -41,7 +41,7 @@ INSERT INTO `admin` VALUES ('1', 'aaa', '男', '23', '027-88888888', '1311111111
 -- Table structure for `custom_account`
 -- ----------------------------
 DROP TABLE IF EXISTS `custom_account`;
-CREATE TABLE `custom_account` (
+CREATE TABLE `Custom_account` (
   `custom_accountID` int(11) NOT NULL AUTO_INCREMENT,
   `custom_username` varchar(255) DEFAULT NULL,
   `custom_password` varchar(255) DEFAULT NULL,
@@ -65,7 +65,7 @@ INSERT INTO `custom_account` VALUES ('9', 'hedong', 'aaa111', '15');
 -- Table structure for `homes`
 -- ----------------------------
 DROP TABLE IF EXISTS `homes`;
-CREATE TABLE `homes` (
+CREATE TABLE `Homes` (
   `homesID` int(11) NOT NULL AUTO_INCREMENT,
   `homes_number` varchar(255) DEFAULT NULL,
   `homes_lou` varchar(255) DEFAULT NULL,
@@ -104,7 +104,7 @@ INSERT INTO `homes` VALUES ('19', 'A035', 'A栋楼', '一套三', '110', '已入
 -- Table structure for `lvhua`
 -- ----------------------------
 DROP TABLE IF EXISTS `lvhua`;
-CREATE TABLE `lvhua` (
+CREATE TABLE `Lvhua` (
   `lvhuaID` int(11) NOT NULL AUTO_INCREMENT,
   `lvhua_area` varchar(255) DEFAULT NULL,
   `lvhua_style` varchar(255) DEFAULT NULL,
@@ -126,7 +126,7 @@ INSERT INTO `lvhua` VALUES ('2', '前花园', '种花', '花工1', '2010-06-02 0
 -- Table structure for `maintain`
 -- ----------------------------
 DROP TABLE IF EXISTS `maintain`;
-CREATE TABLE `maintain` (
+CREATE TABLE `Maintain` (
   `maintainID` int(11) NOT NULL AUTO_INCREMENT,
   `maintain_thing` varchar(255) DEFAULT NULL,
   `maintain_status` varchar(255) DEFAULT NULL,
@@ -163,7 +163,7 @@ INSERT INTO `maintain` VALUES ('14', '吊扇', '已修好', 'A008', '2010-06-18 
 -- Table structure for `notify`
 -- ----------------------------
 DROP TABLE IF EXISTS `notify`;
-CREATE TABLE `notify` (
+CREATE TABLE `Notify` (
   `notifyID` int(11) NOT NULL AUTO_INCREMENT,
   `notify_content` varchar(2000) DEFAULT NULL,
   `notify_date` datetime DEFAULT NULL,
@@ -188,7 +188,7 @@ INSERT INTO `notify` VALUES ('13', '亲爱的各位小区业主：\r\n四年一�
 -- Table structure for `personnel`
 -- ----------------------------
 DROP TABLE IF EXISTS `personnel`;
-CREATE TABLE `personnel` (
+CREATE TABLE `Personnel` (
   `personnelID` int(11) NOT NULL AUTO_INCREMENT,
   `personnel_name` varchar(255) DEFAULT NULL,
   `personnel_age` int(11) DEFAULT NULL,
@@ -224,7 +224,7 @@ INSERT INTO `personnel` VALUES ('6', '任强', '34', '男', '521231312313212321'
 -- Table structure for `cars`
 -- ----------------------------
 DROP TABLE IF EXISTS `cars`;
-CREATE TABLE `cars` (
+CREATE TABLE `Cars` (
   `ID` int(11) NOT NULL AUTO_INCREMENT,
   `carowner` varchar(255) DEFAULT NULL,        -- 车主
   `carspace` varchar(255) DEFAULT NULL,        -- 车位
@@ -256,7 +256,7 @@ INSERT INTO `cars` VALUES ('13','和东','014','A035','CC133','15012345678','奔
 -- Table structure for `wuyefei`
 -- ----------------------------
 DROP TABLE IF EXISTS `wuyefei`;
-CREATE TABLE `wuyefei` (
+CREATE TABLE `Wuyefei` (
   `wuyefeiID` int(11) NOT NULL AUTO_INCREMENT,
   `wuyefei_yezhu` varchar(255) DEFAULT NULL,
   `wuyefei_homes_number` varchar(255) DEFAULT NULL,
@@ -324,7 +324,7 @@ INSERT INTO `wuyefei` VALUES ('45', '和东', 'A035', '1.8', '未缴纳', '2010�
 -- Table structure for `xuncha`
 -- ----------------------------
 DROP TABLE IF EXISTS `xuncha`;
-CREATE TABLE `xuncha` (
+CREATE TABLE `Xuncha` (
   `xunchaID` int(11) NOT NULL AUTO_INCREMENT,
   `xuncha_person` varchar(255) DEFAULT NULL,
   `xuncha_type` varchar(255) DEFAULT NULL,
@@ -349,7 +349,7 @@ INSERT INTO `xuncha` VALUES ('5', '任强', '打架斗殴', '2010-06-02 00:00:00
 -- Table structure for `yezhu`
 -- ----------------------------
 DROP TABLE IF EXISTS `yezhu`;
-CREATE TABLE `yezhu` (
+CREATE TABLE `Yezhu` (
   `yezhuID` int(11) NOT NULL AUTO_INCREMENT,
   `yezhu_homesnumber` varchar(255) DEFAULT NULL,
   `yezhu_name` varchar(255) DEFAULT NULL,
